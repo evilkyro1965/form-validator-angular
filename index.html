@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="transcludeExample">
+<head>
+    <title>List View</title>
+		<script src="angular.min.js"></script>
+    <script src="angular-resource.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+		<script src="app.js"></script>
+
+</head>
+<body ng-controller="ExampleController">
+
+<div class="container">
+
+	<form>
+		<input-text name="username" label="Username" submit="isSubmit">
+			<validator class="validator" type="notEmpty" message="Username can't empty"></validator>
+		</input-text>
+		<button ng-click="submit" type="submit" class="btn btn-default">Submit</button>
+	</form>
+
+</div>
+
+</body>
+</html>
